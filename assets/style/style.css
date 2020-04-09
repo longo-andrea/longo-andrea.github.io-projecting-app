@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title-centered {
+  text-align: center;
+}
+
+.cover {
+  padding-top: 10rem;
+  min-height: 60vh;
+
+  background-image: url('/assets//img/background.svg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: bottom right;
+  overflow: visible;
+}
+
+.step-card {
+  min-height: 90vh;
+}
+
+.app-screenshot-image {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.social-icon {
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+/* device < 600px */
+@media screen and (max-width: 600px) {
+  .cover {
+    padding-top: 5rem;
+
+    background-size: contain;
+  } 
+
+  .step-card {
+    min-height: 60vh;
+  }
+
+  .app-screenshot-image {
+    margin: 0 auto;
+    width: 40%;
+  }
+}
+
+
+/* 600< device < 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .cover {
+    padding-bottom: 5rem;
+
+    background-size: 60%;
+  }
+}

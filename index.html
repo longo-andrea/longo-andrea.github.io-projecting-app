@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- meta tag -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="icon" href="assets/img/logo.png">
+  <meta name="description" content="Projecting is an easy and intuitive application, and its purpose is to provide to beginner developers a tool to support them during the development of their projects.">
+  <meta name="keywords" content="projecting tasks deadlines project">
+
+  <!-- CSS -->
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <!-- Font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/style/style.css">
+
+  <title>Projecting</title>
+
 </head>
 <body>
-  
+<nav class="level navbar is-fixed-top is-mobile">
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="#workflow">Workflow</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="navbar-item" href="#">
+      <img src="/assets/img/logo.svg" width="32" />
+      <strong>Projecting</strong>
+    </a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="#techs">Involved techs</a>
+  </p>
+</nav>
+
+<div class="section cover">
+  <div class="container">
+    <h1 class="title">Projecting</h1>
+    <h2 class="subtitle">Keep your projects organized by having all information in one place.</h2>
+    <div class="buttons">
+      <button class="button">
+        <span class="icon is-small">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>v0.3.0</span>
+      </button>
+      <button class="button is-primary">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>Source code</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="title is-2 title-centered" id="workflow">Workflow</h2>
+  <div class="columns">
+    <div class="column">
+      <div class="box step-card">
+        <h3 class="title is-3">1. Add a Project</h3>
+        <figure class="image app-screenshot-image">
+          <img src="/assets/img/add-project.png" alt="add project page screenshot" />
+        </figure>
+        <div class="media">          
+          <div class="media-content">
+            As first, you have to add a new project. <br />
+            It's quite simple, only three info are required!
+            <div class="content">
+              <ul>
+                <li>Insert project name</li>
+                <li>Insert a brief project description</li>
+                <li>Add deadlines' date</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="box step-card">
+        <h3 class="title is-3">2. Add a Task</h3>
+        <figure class="image app-screenshot-image">
+          <img src="/assets/img/add-task.png" alt="add task page screenshot" />
+        </figure>
+        <div class="media">
+          <div class="media-content">
+            Then, add some tasks! <br />
+            <div class="content">
+              <ul>
+                <li>Insert task name</li>
+                <li>Insert a brief task description</li>
+              </ul>
+            </div>
+            <br />
+            From the project page you can also mark a task as working on!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="box step-card">
+        <h3 class="title is-3">3. Overview</h3>
+        <figure class="image app-screenshot-image">
+          <img src="/assets/img/homepage.png" alt="homepage page screenshot" />
+        </figure>
+        <div class="media">
+          <div class="media-content">
+            Homepage allow you to fastly check the project progress. <br />
+            There are some handful features:
+            <div class="content">
+              <ul>
+                <li>You can mark tasks, deadlines and projects as completed</li>
+                <li>By tapping on task's name, you can see its description</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="title is-2 title-centered" id="techs">Involved techs</h2>
+  <nav class="level is-mobile">
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Vue</p>
+        <a href="https://vuejs.org/">
+          <figure class="image is-64x64">
+            <img src="/assets/img/vue-logo.png" />
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Vuex</p>
+        <a href="https://vuex.vuejs.org/">
+          <figure class="image is-64x64">
+            <img src="/assets/img/vuex-logo.png" />
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Vue Router</p>
+        <a href="https://router.vuejs.org/">
+          <figure class="image is-64x64">
+            <img src="/assets/img/vue-router-logo.png" />
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Element</p>
+        <a href="https://element.eleme.io/#/en-US">
+          <figure class="image is-64x64">
+            <img src="/assets/img/element-logo.png" />
+          </figure>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>You can find me on</p>
+    <a href="https://www.instagram.com/andrea.wdev/">
+      <i class="fab fa-instagram fa-3x social-icon"></i>
+    </a>
+    <a href="https://github.com/longo-andrea/">
+      <i class="fab fa-github-square fa-3x social-icon"></i>
+    </a>
+    <a href="http://andreawdev.com/#/">
+      <i class="fas fa-globe fa-3x social-icon"></i>
+    </a>
+    <p>
+      <strong>Projecting</strong> source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
